@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div class="container">
+	<fieldset id="container">
+		<form name="calculator">
+
+			<input id="display" type="text" name="display" readonly>
+
+            <!-- <div class="screen" style="border: 1px solid black; height: 70px; width: 300px;"></div> -->
+            <!-- <button onClick="getValue(1)">1</button>
+            <button onClick="getValue(2)">2</button>
+            <button onClick="getValue(3)">3</button>
+            <button onClick="getValue('+')">+</button>
+            <button onClick="getValue('/')">/</button>
+            <button onClick="getValue('-')">-</button>
+            <button onClick="getValue('*')">*</button>
+            <button onClick="getValue('=')">=</button>
+            <button onClick="getValue('')">Del</button>
+            <button onClick="getValue('back')">back</button> -->
+            
+			<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+			<input class="button digits" type="button" value="8" onclick="getValue(8)">
+			<input class="button digits" type="button" value="9" onclick="getValue(9)">
+            <input id="clearButton" class="button" type="button" value="Del" onClick="getValue('')">
+			<br>
+			<input class="button digits" type="button" value="4" onclick="getValue(4)">
+			<input class="button digits" type="button" value="5" onclick="getValue(5)">
+			<input class="button digits" type="button" value="6" onclick="getValue(6)">
+            <input id="back-btn" class="button back-btn" type="button" value="⌫"onClick="getValue('back')">
+			<!-- <input id="back-btn" class="button back-btn" value="C" onClick="getValue('back')"  /> -->
+			<br>
+			<input class="button digits" type="button" value="1" onclick="getValue(1)">
+			<input class="button digits" type="button" value="2" onclick="getValue(2)">
+			<input class="button digits" type="button" value="3" onclick="getValue(3)">
+			<input class="button mathButtons" type="button" value="x" onclick="getValue('*')">
+			
+			<br>
+			<input class="button digits" type="button" value="." onclick="getValue('.')">
+			<input class="button digits" type="button" value="0" onclick="getValue(0)">
+            <input class="button mathButtons" type="button" value="+" onclick="getValue('+')" >
+            <input class="button mathButtons" type="button" value="-" onclick="getValue('-')">
+			<input class="button mathButtons equalbtn" type="button" value="=" onclick="getValue('=')">
+            <input class="button mathButtons" type="button" value="/" onclick="getValue('/')">
+		</form>
+	</fieldset>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
